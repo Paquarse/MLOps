@@ -1,0 +1,30 @@
+artifact_path: model
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.9.13
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: xgb
+    xgb_version: 1.7.5
+mlflow_version: 2.2.2
+model_uuid: d8e0edd33d504ba480919fe2071a57ed
+run_id: b477368fcf0a4210b22897e5cb6e2f28
+signature:
+  inputs: '[{"name": "battery_power", "type": "long"}, {"name": "blue", "type": "long"},
+    {"name": "clock_speed", "type": "double"}, {"name": "dual_sim", "type": "long"},
+    {"name": "fc", "type": "long"}, {"name": "four_g", "type": "long"}, {"name": "int_memory",
+    "type": "long"}, {"name": "m_dep", "type": "double"}, {"name": "mobile_wt", "type":
+    "long"}, {"name": "n_cores", "type": "long"}, {"name": "pc", "type": "long"},
+    {"name": "px_height", "type": "long"}, {"name": "px_width", "type": "long"}, {"name":
+    "ram", "type": "long"}, {"name": "sc_h", "type": "long"}, {"name": "sc_w", "type":
+    "long"}, {"name": "talk_time", "type": "long"}, {"name": "three_g", "type": "long"},
+    {"name": "touch_screen", "type": "long"}, {"name": "wifi", "type": "long"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+utc_time_created: '2023-05-01 23:18:29.072699'
